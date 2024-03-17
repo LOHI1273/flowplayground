@@ -1,5 +1,5 @@
-#**Authentication Contract**
-**Public Variable**
+## **Authentication Contract**
+# **Public Variable**
 The cornerstone of the authentication contract lies in its companyProfile component, meticulously crafted to serve as a comprehensive repository for employee profiles. This pivotal dictionary structure meticulously organizes and encapsulates crucial employee details such as first name, last name, salary, age, and the distinctive employee ID, forming the bedrock of the organization's personnel management system.
 Functions
 addProfile(firstName, lastName, salary, age, employeeId):
