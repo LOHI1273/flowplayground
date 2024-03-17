@@ -1,4 +1,4 @@
-pub contract Authentication {
+pub contract default {
     pub var companyProfile: {UInt64: compProfiles}
     
     pub struct compProfiles{
