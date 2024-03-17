@@ -1,42 +1,14 @@
-This a coded in cadence language which is an resource oriented program .we can use flowplayground to run this code.
+Authentication Contract
+Public Variable
+The cornerstone of the authentication contract lies in its companyProfile component, meticulously crafted to serve as a comprehensive repository for employee profiles. This pivotal dictionary structure meticulously organizes and encapsulates crucial employee details such as first name, last name, salary, age, and the distinctive employee ID, forming the bedrock of the organization's personnel management system.
+Functions
+addProfile(firstName, lastName, salary, age, employeeId):
+At the heart of the authentication contract resides the indispensable addProfile function. Functioning as the gateway for integrating fresh talent into the organizational fold, addProfile assumes a central role in the seamless expansion of the company's workforce. With meticulous precision, this function orchestrates the assimilation of a newly minted employee profile into the dynamic fabric of companyProfile. From initializing the profile with the provided details to ensuring data integrity and coherence, addProfile stands as the vanguard of efficient personnel management practices.
+Transaction Contract
+Function
+transaction(firstName, lastName, salary, age, employeeId):
+The transactional landscape of the authentication system finds its anchor in the transaction contract's defining function: transaction. This function serves as the operational epicenter for the pivotal task of onboarding new talent. By seamlessly interfacing with the authentication contract's addProfile function, transaction streamlines the process of integrating a freshly minted employee profile into the organizational framework. Fuelled by the rich tapestry of employee details provided as parameters, transaction embodies efficiency and efficacy in its quest to fortify the company's talent pool.
+Script
+main(employeeId):
+Within the scripting realm, the main function emerges as the beacon guiding stakeholders to the treasure trove of employee information nestled within the confines of companyProfile. With a simple invocation, stakeholders gain unfettered access to the intricate tapestry of employee profiles, each meticulously crafted to reflect the essence of the organization's human capital. Through the judicious use of the ! symbol, main ensures the seamless unwrapping of data, paving the way for a frictionless journey through the corridors of organizational personnel data.
 
-in authentication .cdc
-
-this is a smart contract called authentication in which a pub var called comapanyProfile which is of type dictionary.
-it have structure called compProfiles which has 5 fields[first name,last name,salary ,age,employeeId]
-
-then intilalize the as arugrment.then pass assign this passed argument to corresponding field of struct.
-
-**Functions:**
-  - `addProfile`: Adds a new employee profile to the `companyProfile` dictionary.
-
-  - then initalize a empty dictionary
-
-  - ** Transaction.cdc
-  - Import Statement: It imports the Authentication module from 0x05. The 0x05 likely refers to the address or identifier of the smart contract where the Authentication module resides.
-
-Transaction Function:
-
-The function is named transaction and takes in parameters like firstName, lastName, salary, age, and employeeId.
-
-It contains two main sections: prepare and execute.
-
-prepare: This section is currently empty, but typically it would involve preparing the transaction, verifying permissions, or checking conditions before executing the main logic.
-
-execute: Within this section, the code executes the addProfile function from the Authentication module. It passes the provided parameters (firstName, lastName, salary, age, employeeId) to the addProfile function.
-
-After adding the profile, it logs a success message using log.
-
-
-** script.cdc
-
-The function is named main and marked as pub (public), indicating it can be accessed from outside the contract.
-
-It takes in a parameter employeeId of type UInt64.
-
-Inside the function, it returns the company profile associated with the provided employeeId from the Authentication contract's companyProfile storage variable.
-
-The ! operator used after Authentication.companyProfile[employeeId] implies that the contract assumes the profile for the given employeeId always exists in the companyProfile map.
-'!' we use this because to force unwrapp it.dictionary also return optional type to prevent it we use !symbol during returning.
-
-thank you.
