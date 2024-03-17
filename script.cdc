@@ -1,5 +1,5 @@
-import authentication from 0x05
+import Authentication from 0x05
 
-pub fun main(employeeId:UInt64): authentication.compProfiles {
-    return authentication.companyProfile[employeeId]!
+pub fun main(employeeId:UInt64): Authentication.compProfiles {
+    return Authentication.companyProfile[employeeId]!
 }
