@@ -8,7 +8,7 @@ pub contract Authentication {
         pub let age: Int
         pub let employeeId: UInt64 
         
-        // You have to pass in 4 arguments when creating this Struct.
+        
         init(_firstName: String, _lastName: String, _salary: Int,_age:Int, _employeeId: UInt64) {
             self.firstName = _firstName
             self.lastName = _lastName
