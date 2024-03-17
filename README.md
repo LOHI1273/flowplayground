@@ -37,6 +37,6 @@ It takes in a parameter employeeId of type UInt64.
 Inside the function, it returns the company profile associated with the provided employeeId from the Authentication contract's companyProfile storage variable.
 
 The ! operator used after Authentication.companyProfile[employeeId] implies that the contract assumes the profile for the given employeeId always exists in the companyProfile map.
-! we use this because to force unwrapp it.dictionary also return optional type to prevent it we use !symbol during returning.
+'!' we use this because to force unwrapp it.dictionary also return optional type to prevent it we use !symbol during returning.
 
-thankxxx
+thank you.
